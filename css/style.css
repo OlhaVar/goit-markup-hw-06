@@ -254,7 +254,6 @@ body {
 
 /* dignity */
 .dignity,
-.exemples,
 .teams,
 .clients {
   padding-top: 94px;
@@ -308,6 +307,7 @@ body {
 
 /* exemples и teams */
 .exemples .exemples-list {
+  margin-bottom: 94px;
   display: flex;
 }
 
@@ -385,6 +385,9 @@ body {
   width: 270px;
   height: 428px;
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .teams .card-name {
@@ -622,6 +625,7 @@ body {
 }
 
 .sub-form {
+  margin-top: 20px;
   display: flex;
 }
 
@@ -709,6 +713,11 @@ body {
 .icon-close {
   fill: currentColor;
 }
+.icon-close:hover,
+.icon-close:focus {
+  color: var(--accent-color);
+  transition: var(--time250ms) var(--timing-function);
+}
 
 .form {
   width: 100%;
@@ -727,6 +736,12 @@ body {
   margin-bottom: 30px;
 
   color: var(--title-text-color);
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .input-wrapper {
